@@ -37,3 +37,4 @@ login({ appState }, (err, api) => {
       command.execute(api, message, args, db, saveDatabase);
     }
   });
+});
