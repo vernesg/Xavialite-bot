@@ -1,0 +1,13 @@
+// package.json
+{
+  "name": "xavialite-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws3-fca": "^1.0.0",
+    "express": "^4.18.2"
+  }
+}
