@@ -1,4 +1,4 @@
-
+// index.js ini
 require("./server");
 const login = require("ws3-fca");
 const fs = require("fs");
