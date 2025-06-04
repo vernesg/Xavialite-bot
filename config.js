@@ -1,6 +1,6 @@
 // config.js
 module.exports = {
   prefix: "!",
-  ownerID: "1234567890",
+  ownerID: "100010099516674",
   botName: "XaviaLiteBot"
 };
