@@ -1,4 +1,4 @@
-// index.js ini
+// index.js
 require("./server");
 const login = require("ws3-fca");
 const fs = require("fs");
@@ -20,13 +20,13 @@ function saveDatabase() {
 }
 
 login({ appState }, (err, api) => {
-  if (err) return console.error("\u274C Login failed:", err);
+  if (err) return console.error("❌ Login failed:", err);
 
   api.setOptions({ listenEvents: true });
-  console.log("\u2705 Bot is online!");
+  console.log("✅ Bot is online!");
 
   api.listenMqtt((err, message) => {
-    if (err) return console.error("\u274C Listen error:", err);
+    if (err) return console.error("❌ Listen error:", err);
     if (!message.body || !message.body.startsWith(config.prefix)) return;
 
     const args = message.body.slice(config.prefix.length).trim().split(/ +/);
